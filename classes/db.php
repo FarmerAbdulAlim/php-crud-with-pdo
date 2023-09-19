@@ -1,5 +1,5 @@
 <?php
-include "/config/config.php";
+include "config/config.php";
 
 class DB
 {
@@ -14,5 +14,10 @@ class DB
                 echo $e->getMessage();
             }
         }
+        return self::$pdo;
+    }
+    public static function getConnection($sql)
+    {
+        return self::connection()->prepare($sql);
     }
 }

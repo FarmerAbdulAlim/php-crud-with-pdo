@@ -1,1 +1,3 @@
-# php-crud-with-pdo
+# Project Screenshots
+
+![Project Screenshots](/img/scrn.png)
